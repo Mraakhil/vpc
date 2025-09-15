@@ -8,4 +8,15 @@ pipeline {
             }
         }
     }
+
+   stages {
+        stage('git init') {
+            steps {
+                sh 'terrform init'
+            }
+        }
+    }
+
+
+    
 }
