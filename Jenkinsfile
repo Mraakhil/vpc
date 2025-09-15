@@ -2,21 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('git pull') {
+        stage('Git Pull') {
             steps {
                 git branch: 'main', url: 'https://github.com/Mraakhil/vpc.git'
             }
         }
-    }
 
-   stages {
-        stage('git init') {
+        stage('Terraform Init') {
             steps {
-                sh 'terrform init'
+                sh 'terraform init'
             }
         }
     }
-
-
-    
 }
+
