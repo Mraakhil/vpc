@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/Mraakhil/vpc.git
+                git branch: 'main', url: 'https://github.com/Mraakhil/vpc.git'
             }
         }
     }
