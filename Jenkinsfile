@@ -27,6 +27,6 @@ pipeline {
                 sh 'terraform apply'
             }
         }
-    
+    }
 }
 
